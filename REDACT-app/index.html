@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>REDACTR | SCRAMBLE SOME WORDS FROM A BODY OF TEXT CONTENT</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="inputDiv">
+        <textarea
+          id="input-content"
+          name="content"
+          rows="18"
+          cols="40"
+          placeholder="Enter content to be scrambled here..."
+        ></textarea>
+        <input
+          type="text"
+          name="words"
+          id="wordsToBeScrambled"
+          placeholder="Specify words to be scrambled."
+        />
+        <input
+          type="text"
+          name="words"
+          id="replacingWords"
+          placeholder="Words to scrambled with"
+        />
+        <button type="submit" id="submit">REDACT NOW</button>
+      </div>
+      <div class="outputDiv">
+        <p>REDACTED</p>
+        <textarea
+          id="output-content"
+          name="content"
+          rows="15"
+          cols="40"
+          id="result"
+        ></textarea>
+        <div class="stat">
+          <h6>STATS</h6>
+          <p>Words scanned: <span id="wordLength" class="num">0</span></p>
+          <p>Words scrambled: <span id="wordsScrambled" class="num">0</span></p>
+          <p>Characters scrambled: <span id="charactersScrambled" class="num">0</span></p>
+          <p>Time spent: <span id="timeSpent" class="num">0s</span></p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

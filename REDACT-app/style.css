@@ -1,0 +1,97 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-weight: 400;
+  color: #333;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: blue;
+}
+
+.inputDiv,
+.outputDiv {
+  display: flex;
+  flex-direction: column;
+  margin-right: 25px;
+  background: rgba(230, 230, 200, 0.7);
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 2px 2px 15px #fff;
+  height: 400px;
+}
+
+input {
+  margin-top: 5px;
+  border: none;
+}
+
+#result {
+  margin-top: 30px;
+}
+
+#submit {
+  margin-top: 10px;
+  display: block;
+  float: right;
+  width: 120px;
+  height: 40px;
+  background-color: green;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+}
+
+#submit:hover {
+  background-color: darkgreen;
+}
+
+.stat {
+  margin-top: 15px;
+  line-height: 25px;
+}
+
+#replacingWords,
+#wordsToBeScrambled {
+  padding: 2px;
+  width: 319px;
+  height: 30px;
+}
+
+.num {
+  color: green;
+}
+
+/* Responsiveness */
+@media only screen and (max-width: 768px) {
+  body {
+    min-width: 500px;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    padding: 25px;
+  }
+
+  .inputDiv,
+  .outputDiv {
+    width: 400px;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 15px #fff;
+  }
+
+  .inputDiv {
+    margin-bottom: 20px;
+  }
+}
