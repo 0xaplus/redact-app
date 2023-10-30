@@ -21,7 +21,7 @@ function scrambleText(displayStat) {
       alert(`${i} is not part of the text content.`);
       return;
     } else {
-      input = input.replaceAll(i, `${replacingChar.length > 1 ? replacingChar : replacingChar.repeat(i.length)}`);
+      input = input.replaceAll(i, `${replacingChar.length > 1 ? replacingChar : replacingChar.repeat(i.length)}`); // checks whether the replacing char is more than 1
       characters += i.match(/\w+/gi); // Converts the each text to array of characters only
     }
   });
