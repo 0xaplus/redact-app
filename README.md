@@ -1,7 +1,7 @@
 # redact-app
   
 A simple redact app
-  https://myredact-app.netlify.app/redact-app/
+  https://myredact-app.netlify.app/
 
 The app helps people to safely share content on social media by scrambling portions of the text they don't want the world to read/see.
 
